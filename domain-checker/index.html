@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sending domain checker</title>
+<meta name="description" content="Check if a cold email sending domain is set up: MX, SPF, DKIM and DMARC in plain words, plus your SPF lookup count. Free, no login, runs in your browser.">
+<meta property="og:title" content="Sending domain checker">
+<meta property="og:description" content="MX, SPF, DKIM and DMARC in plain words, plus your SPF lookup count. Free, no login.">
+<meta name="theme-color" content="#05060b">
+<link rel="icon" href="arnie.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="sky" aria-hidden="true"></div>
+
+<header class="top">
+  <a class="brand" href="https://arnies.ai" rel="noopener">
+    <img src="arnie.svg" alt="" width="17" height="26">
+    <span>Arnies</span>
+  </a>
+  <span class="top-note">free tool</span>
+</header>
+
+<main>
+  <section class="hero">
+    <h1 id="headline">Is your sending domain ready?</h1>
+    <p class="lede" id="lede">Checks MX, SPF, DKIM and DMARC in plain words, and counts how many of your 10 SPF lookups you have used. Free, no login, runs in your browser.</p>
+
+    <form id="form" class="check-form" autocomplete="off" novalidate>
+      <label class="visually-hidden" for="domain">Domain</label>
+      <input id="domain" name="domain" type="text" inputmode="url" spellcheck="false" autocapitalize="none" placeholder="yourdomain.com" required>
+      <button id="go" type="submit">Check domain</button>
+      <details class="selector">
+        <summary>Add a DKIM selector</summary>
+        <label for="selector">Selector</label>
+        <input id="selector" name="selector" type="text" spellcheck="false" autocapitalize="none" placeholder="e.g. google">
+        <p class="hint">Find it in a sent email: open "show original" and look for <code>s=</code> in the DKIM-Signature line. Leave it empty and we try the common ones.</p>
+      </details>
+    </form>
+    <p class="error" id="error" role="alert" hidden></p>
+  </section>
+
+  <section id="results" class="results" aria-live="polite" hidden>
+    <ol class="checks" id="checks"></ol>
+    <p class="share" id="share" hidden><button type="button" id="copy-link" class="ghost">Copy link to these results</button></p>
+  </section>
+</main>
+
+<footer class="foot">
+  <p>Lookups go from your browser to Cloudflare's public DNS (Google's as a backup). Nothing is stored or sent to us.</p>
+  <p>Rules from <a href="https://support.google.com/mail/answer/81126" rel="noopener">Gmail</a>, <a href="https://senders.yahooinc.com/best-practices/" rel="noopener">Yahoo</a> and <a href="https://postmaster.outlook.com/policies.aspx" rel="noopener">Outlook</a> sender requirements, and the SPF lookup limit in <a href="https://www.rfc-editor.org/rfc/rfc7208#section-4.6.4" rel="noopener">RFC 7208</a>.</p>
+  <p>Made by <a href="https://x.com/itzSaasified" rel="noopener">@itzSaasified</a> at <a href="https://arnies.ai" rel="noopener">Arnies</a>.</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

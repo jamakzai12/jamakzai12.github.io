@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="170" height="256" viewBox="0 0 170 256" fill="none">
+  <!-- Arnie, drawn entirely with scalable paths and gradients. -->
+  <defs>
+    <linearGradient id="shell" x1="45" y1="32" x2="134" y2="117" gradientUnits="userSpaceOnUse"><stop stop-color="#F4F7FC"/><stop offset=".55" stop-color="#DFE5F0"/><stop offset="1" stop-color="#BDC8DC"/></linearGradient>
+    <linearGradient id="shell-side" x1="135" y1="39" x2="156" y2="109" gradientUnits="userSpaceOnUse"><stop stop-color="#B9C5DA"/><stop offset="1" stop-color="#8395B3"/></linearGradient>
+    <linearGradient id="porcelain" x1="26" y1="120" x2="153" y2="217" gradientUnits="userSpaceOnUse"><stop stop-color="#F3F6FC"/><stop offset=".55" stop-color="#DAE2F0"/><stop offset="1" stop-color="#AEBED6"/></linearGradient>
+    <linearGradient id="violet" x1="49" y1="111" x2="129" y2="196" gradientUnits="userSpaceOnUse"><stop stop-color="#9382FF"/><stop offset=".4" stop-color="#7864F4"/><stop offset="1" stop-color="#5140CB"/></linearGradient>
+    <linearGradient id="violet-side" x1="129" y1="119" x2="154" y2="186" gradientUnits="userSpaceOnUse"><stop stop-color="#6450DC"/><stop offset="1" stop-color="#37297D"/></linearGradient>
+    <linearGradient id="glass" x1="58" y1="48" x2="116" y2="101" gradientUnits="userSpaceOnUse"><stop stop-color="#23344F"/><stop offset=".55" stop-color="#132238"/><stop offset="1" stop-color="#0C1628"/></linearGradient>
+    <linearGradient id="screen" x1="26" y1="160" x2="94" y2="212" gradientUnits="userSpaceOnUse"><stop stop-color="#34425B"/><stop offset="1" stop-color="#141D32"/></linearGradient>
+    <linearGradient id="cyan" x1="76" y1="61" x2="97" y2="100" gradientUnits="userSpaceOnUse"><stop stop-color="#71E5FF"/><stop offset=".5" stop-color="#32CDF8"/><stop offset="1" stop-color="#24A8E6"/></linearGradient>
+    <linearGradient id="boot" x1="61" y1="212" x2="94" y2="250" gradientUnits="userSpaceOnUse"><stop stop-color="#8B77FA"/><stop offset="1" stop-color="#5841D0"/></linearGradient>
+    <linearGradient id="antenna" x1="80" y1="8" x2="104" y2="36" gradientUnits="userSpaceOnUse"><stop stop-color="#A38FFF"/><stop offset="1" stop-color="#6750DB"/></linearGradient>
+    <linearGradient id="glint" x1="63" y1="48" x2="114" y2="98" gradientUnits="userSpaceOnUse"><stop stop-color="#D9ECFF" stop-opacity=".13"/><stop offset=".7" stop-color="#D9ECFF" stop-opacity="0"/></linearGradient>
+  </defs>
+  <!-- Folded legs: each visible face shares exact corners with its neighbours. -->
+  <path d="M14 184 50 174 91 197 61 213 14 198Z" fill="url(#porcelain)"/>
+  <path d="M14 198 61 213 61 228 14 213Z" fill="#A7B5CA"/>
+  <path d="M61 213 91 197 91 212 61 228Z" fill="#8597B4"/>
+  <path d="M96 197 136 181 158 191 128 210Z" fill="url(#porcelain)"/>
+  <path d="M128 210 158 191 158 211 128 230Z" fill="#A8B8CE"/>
+  <path d="M96 197 128 210 128 230 96 217Z" fill="#8698B3"/>
+  <!-- Torso: top, front and shaded right face. -->
+  <path d="m46 109 12-8 91 11-14 8Z" fill="#867AFB"/>
+  <path d="m46 109 89 11 4 68-47 27-48-22Z" fill="url(#violet)"/>
+  <path d="m135 120 14-8 8 65-18 11Z" fill="url(#violet-side)"/>
+  <path d="m46 109-2 49 19 20Z" fill="#796BF2"/>
+  <path d="m80 127 22 3-1 20-22-3Z" fill="#B4A6FF" fill-opacity=".65"/>
+  <path d="m81 128 20 3" stroke="#D2C7FF" stroke-opacity=".6" stroke-width=".7"/>
+  <path d="m48 111 85 11" stroke="#CABFFF" stroke-opacity=".65" stroke-width=".9"/>
+  <path d="m73 113 48 5" stroke="#342978" stroke-opacity=".3" stroke-width="1.5"/>
+  <!-- Left arm. -->
+  <path d="m35 119 13-9 3 15-12 24-14 2Z" fill="url(#porcelain)"/>
+  <path d="m35 119-10 32-5 3 7-30Z" fill="#B4BDCA"/>
+  <g class="arnie-typing-hand arnie-typing-hand-left">
+  <path d="m25 151 14-2 20 5-12 7-26-5Z" fill="#F0F1F6"/>
+  <path d="m21 156 26 5 12-7v9l-11 7-25-6Z" fill="#AAB5C5"/>
+  </g>
+  <!-- Right upper arm stays at the shoulder; the forearm taps the keyboard. -->
+  <path d="M138 121 150 117 155 121 143 126Z" fill="#F0F4FA"/>
+  <path d="M138 121 143 126 150 161 142 164Z" fill="url(#porcelain)"/>
+  <path d="M143 126 155 121 163 158 150 161Z" fill="#AAB9CF"/>
+  <g class="arnie-typing-hand arnie-typing-hand-right">
+    <path d="M142 158 153 155 163 162 129 184 117 177Z" fill="url(#porcelain)"/>
+    <path d="M129 184 163 162 163 173 129 195Z" fill="#A8B9D2"/>
+    <path d="M117 177 129 184 129 195 117 188Z" fill="#8FA3C0"/>
+    <path d="M108 171 119 167 129 173 118 179Z" fill="#DCE5F2"/>
+    <path d="M108 171 118 179 118 192 108 184Z" fill="#BDCBDF"/>
+    <path d="M118 179 129 173 129 186 118 192Z" fill="#91A6C3"/>
+    <path d="m109 172 9 7 10-6" stroke="#F6FAFF" stroke-opacity=".55" stroke-width=".5"/>
+  </g>
+  <!-- Laptop base and keyboard. -->
+  <path d="m76 185 27-9 23 20-33 19-43-11Z" fill="#293242"/>
+  <path d="m50 204 43 11 33-19v5l-33 20-42-12Z" fill="#111827"/>
+  <g fill="#687385">
+    <path d="m96 183 5-2 4 3-5 2Zm7 5 5-2 4 3-5 2Zm7 5 5-2 4 3-5 2Z"/>
+    <path d="m89 187 5-2 4 3-5 2Zm7 5 5-2 4 3-5 2Zm7 5 5-2 4 3-5 2Z"/>
+    <path d="m84 192 5-2 4 3-5 2Zm7 5 5-2 4 3-5 2Zm7 5 5-2 4 3-5 2Z"/>
+  </g>
+  <!-- Matching boots, turned out symmetrically with closed, shared face edges. -->
+  <path d="M62 214 82 220 65 232 45 226Z" fill="#9987FF"/>
+  <path d="M45 226 65 232 65 248 45 242Z" fill="url(#boot)"/>
+  <path d="M65 232 82 220 82 236 65 248Z" fill="#5140BE"/>
+  <path d="M89 220 109 214 126 226 106 232Z" fill="#9987FF"/>
+  <path d="M89 220 106 232 106 248 89 236Z" fill="#5944CB"/>
+  <path d="M106 232 126 226 126 242 106 248Z" fill="url(#boot)"/>
+  <path d="M46 226 65 231.5 81 220M90 220 106 231.5 125 226" stroke="#CCBFFF" stroke-opacity=".35" stroke-width=".55" stroke-linejoin="round"/>
+  <!-- Laptop screen: crisp edges and two code lines. -->
+  <path d="m19 150 72 10 8 53-71-17Z" fill="#121B29"/>
+  <path d="m19 150 5-5 73 11-6 4Z" fill="#586172"/>
+  <path d="m91 160 6-4 9 51-7 6Z" fill="#0A111C"/>
+  <path d="m23 156 63 9 8 42-62-14Z" fill="url(#screen)"/>
+  <path d="m24 157 61 9" stroke="#97A9C3" stroke-opacity=".24" stroke-width=".8"/>
+  <path d="m25 158 36 5-13 35-16-4Z" fill="#B8D5FF" fill-opacity=".04"/>
+  <g class="arnie-code-line arnie-code-line-first"><path d="m31 171 27 4 1 5-27-4Z" fill="#72E3C7"/></g>
+  <g class="arnie-code-line arnie-code-line-second"><path d="m35 184 28 5 1 5-28-5Z" fill="#BF9BF5"/></g>
+  <path d="m28 197 69 16" stroke="#60718D" stroke-opacity=".45" stroke-width=".8"/>
+  <!-- Neck, ears and the three head planes. -->
+  <path d="m64 102 58 7v10l-58-7Z" fill="#4C3ECD"/>
+  <path d="m35 48 12-5 1 38-14-2Z" fill="#BEC6D3"/>
+  <path d="m35 48 6 1v32l-7-2Z" fill="#DADEE7"/>
+  <path d="m47 39 10-11 91 5-12 10Z" fill="#E8EAF1"/>
+  <path d="M49 39 134 43Q136 43 136 45V112Q136 114 134 114L48 106Q46 106 46 104L47 41Q47 39 49 39Z" fill="url(#shell)"/>
+  <path d="m136 43 12-10-1 72-11 9Z" fill="url(#shell-side)"/>
+  <path d="m48 40 7 1-1 62-7-1Z" fill="#DEE3ED"/>
+  <path d="M57 47 125 52Q127 52 127 54L126 98Q126 100 124 100L56 94Q54 94 54 92L55 49Q55 47 57 47Z" fill="url(#glass)"/>
+  <path d="m57 48 68 5-1 15-69-5Z" fill="url(#glint)"/>
+  <path d="M69 61 78 62Q79 62 79 63V84Q79 85 78 85L69 84Q68 84 68 83V62Q68 61 69 61ZM105 64 114 65Q115 65 115 66V87Q115 88 114 88L105 87Q104 87 104 86V65Q104 64 105 64Z" fill="url(#cyan)"/>
+  <path d="m69 62 9 1m27 2 9 1" stroke="#C0F3FF" stroke-opacity=".65" stroke-width=".7"/>
+  <path d="M79 85 104 87V97Q104 99 102 99L81 97Q79 97 79 95Z" fill="url(#cyan)"/>
+  <path d="m48 41 87 4m-87-4-1 63" stroke="#FFFFFF" stroke-opacity=".6" stroke-width=".8" stroke-linejoin="round"/>
+  <path d="m48 105 86 8" stroke="#8F9FB8" stroke-opacity=".45" stroke-width=".8"/>
+  <path d="m138 52 13-6 10 4-11 6Z" fill="#E0E5EE"/>
+  <path d="m138 52 12 4v32l-12-3Z" fill="url(#porcelain)"/>
+  <path d="m150 56 11-6-1 30-10 8Z" fill="#929FB4"/>
+  <!-- Antenna. -->
+  <path d="m80 7 6-5 24 2-6 6Z" fill="#9584FC"/>
+  <path d="m80 7 24 3-1 27-24-3Z" fill="url(#antenna)"/>
+  <path d="m104 10 6-6-1 28-6 5Z" fill="#4536BE"/>
+  <path d="m80 7 24 3v2L80 9Z" fill="#A395FF"/>
+</svg>
