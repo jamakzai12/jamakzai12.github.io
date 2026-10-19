@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cold email inbox calculator</title>
+<meta name="description" content="How many inboxes and domains you need for your cold email volume, with spares and the date to start warm-up. Free, no login.">
+<meta property="og:title" content="Cold email inbox calculator">
+<meta property="og:description" content="Inboxes, spares, domains and the day to start warm-up. Free, no login.">
+<meta property="og:image" content="https://jamakzai12.github.io/inbox-calculator/og.png">
+<meta property="og:url" content="https://jamakzai12.github.io/inbox-calculator/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@itzSaasified">
+<meta name="theme-color" content="#05060b">
+<link rel="icon" href="arnie.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="sky" aria-hidden="true"></div>
+
+<header class="top">
+  <a class="brand" href="https://arnies.ai" rel="noopener">
+    <img src="arnie.svg" alt="" width="17" height="26">
+    <span>Arnies</span>
+  </a>
+  <span class="top-note">free tool</span>
+</header>
+
+<main>
+  <section class="hero">
+    <h1 id="headline">How many inboxes do you need?</h1>
+    <p class="lede">Put in how many new people you want to email. You get inboxes, spares, domains and the day to start warm-up. Shown at two speeds, because the safe number per inbox keeps dropping.</p>
+
+    <form id="form" class="inputs" autocomplete="off">
+      <div class="field">
+        <label for="weekly">New contacts a week</label>
+        <input id="weekly" type="number" min="1" step="1" value="1000" inputmode="numeric">
+      </div>
+      <div class="field">
+        <label for="steps">Emails per contact</label>
+        <input id="steps" type="number" min="1" max="10" step="1" value="3" inputmode="numeric">
+        <p class="note">First email plus follow-ups</p>
+      </div>
+      <div class="field">
+        <label for="days">Sending days a week</label>
+        <input id="days" type="number" min="1" max="7" step="1" value="5" inputmode="numeric">
+      </div>
+      <div class="field">
+        <label for="perdomain">Inboxes per domain</label>
+        <input id="perdomain" type="number" min="1" max="10" step="1" value="3" inputmode="numeric">
+      </div>
+      <div class="field">
+        <label for="spare">Spare inboxes warming</label>
+        <input id="spare" type="number" min="0" max="200" step="5" value="50" inputmode="numeric">
+        <p class="note">% on top, ready for when one dies</p>
+      </div>
+      <div class="field">
+        <label for="launch">First send date</label>
+        <input id="launch" type="date">
+      </div>
+    </form>
+  </section>
+
+  <section class="plans" aria-live="polite">
+    <div class="plan-head">
+      <span>New contacts per inbox a day</span>
+      <span><input id="rate-a" type="number" min="1" max="100" value="5" aria-label="Careful speed, new contacts per inbox a day"> careful</span>
+      <span><input id="rate-b" type="number" min="1" max="100" value="20" aria-label="Common speed, new contacts per inbox a day"> common</span>
+    </div>
+    <div id="rows"></div>
+    <p class="gap-note" id="gap"></p>
+  </section>
+</main>
+
+<footer class="foot">
+  <p>Defaults are the numbers we plan with: 3 inboxes per domain, 50% spare inboxes warming, up to three weeks of warm-up. We plan every client at both speeds until our own test says which one holds.</p>
+  <p>Domain cost uses $11.08 a year for a .com, what we paid in September 2026. Check your registrar's price.</p>
+  <p>Made by <a href="https://x.com/itzSaasified" rel="noopener">@itzSaasified</a> at <a href="https://arnies.ai" rel="noopener">Arnies</a>. More free tools: <a href="../domain-checker/">sending domain checker</a>.</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
